@@ -1,5 +1,5 @@
-git clone https://github.com/renz4ie/HerokuManagerBot /root/TeamUltroid
-cp ultroid/.env /root/TeamUltroid/.env
-cd /root/TeamUltroid
-docker build . --rm --force-rm --compress --pull --file Dockerfile -t ultroid
-docker run --privileged --env-file .env --rm -i ultroid
+git clone https://github.com/avipatilpro/FileStoreBot
+cp ultroid/config.py /root/FileStoreBot
+cd /root/FileStoreBot
+pip3 install -r requirements.txt
+python3 bot.py
